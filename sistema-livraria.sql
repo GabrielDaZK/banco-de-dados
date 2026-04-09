@@ -13,3 +13,11 @@ VALUES
 (103, 2, 'A Culpa é das Estrelas'),
 (104, 3, '1984'),
 (105, 3, 'O Pequeno Príncipe');
+
+SELECT 
+    c.nomeCliente,
+    co.NomeLivro
+FROM Compras co
+INNER JOIN Clientes c
+    ON co.ClienteID = c.ID;
+
